@@ -5,3 +5,7 @@
 <!--  -->
 <input #userName />
 <button (click)="show(userName.value)">Show</button>
+
+<!-- If you use a function inside {{ getName() }}, Angular will re-run it on every change detection cycle — even if the result hasn’t changed. -->
+
+<p>{{ getName() }}</p>
